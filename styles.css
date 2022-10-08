@@ -27,7 +27,7 @@ h1{
 }
 .sub-header{
     font-size: 36px;
-    margin: 16px 0px 24px 0px;
+    margin: 16px 0 24px 0;
 }
 button{
     background-color: #05c7cf;
@@ -133,6 +133,7 @@ form{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding: 0 24px;
 }
 input,
 textarea{
@@ -165,4 +166,44 @@ footer{
 
 .footer__link{
     padding: 0px 16px;
+}
+
+@media (max-width: 728px){
+    .row{
+        flex-direction: column;
+        
+
+    }
+    .home__description{
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home__description--button{
+        max-width: 240px;
+    }
+    h1{
+        text-align: center;
+        font-size: 60px;
+    }
+    .sub-header{
+        text-align: center;
+        font-size: 28px;
+    }
+    ul{
+        display: none;
+    }
+    .section__description{
+        flex-direction: column;
+    }
+    .section__description--wrapper{
+        width: 100%;
+    }
+    .about__img--wrapper{
+        width: 100%;
+    }
+    #discord .section__description{
+        flex-direction: column-reverse;
+    }
 }
